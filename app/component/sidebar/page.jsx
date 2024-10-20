@@ -2,38 +2,43 @@
 import { useState, useRef, useEffect } from "react";
 import "./Sidebar.css";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const sidebarRef = useRef(null);
+export default function Sidebar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeSidebar = () => {
-    setIsOpen(false); 
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
 
   return (
-    <div className="sidebar-container">
-      <button onClick={toggleSidebar} className="toggle-button">
-        {isOpen ? "Kapat" : "Aç"}
-      </button>
-
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
-        <button onClick={closeSidebar} className="close-button">
-          X
-        </button>
-        <h2>Sidebar</h2>
-        <ul>
-          <li>Anasayfa</li>
-          <li>Hakkımızda</li>
-          <li>İletişim</li>
-        </ul>
+    <div className="side-main-bar">
+      <div className="header-start">
+        <h1>Invoices</h1>
+        <div className="newinvoice">
+          <p>Filter by status</p>
+          <button onClick={toggleSidebar}>
+            <span>+</span>
+            New Invoice
+          </button>
+        </div>
+      </div>
+      <div className="container">
+        <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+          <div className="newcontainer">
+            <form className="newform" action="">
+              <Formain />
+              <div className="btn">
+                <button onClick={toggleSidebar}>Discard</button>
+                <div className="btn-end">
+                  <button>Save as Draft</button>
+                  <button>Save & Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Sidebar;

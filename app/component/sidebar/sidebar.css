@@ -1,35 +1,374 @@
+body {
+  background-color: #F8F8FB;
+}
+
+.main {
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.header-start {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+}
+
+.newinvoice {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #7C5DFA;
+    width: 150px;
+    height: 48px;
+    border: transparent;
+    border-radius: 24px;
+
+    span {
+      background-color: #FFFFFF;
+      color: #7C5DFA;
+      padding: 11px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.fatura-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.fatura {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bilgi {
+  display: flex;
+  gap: 44px;
+}
+
+.fiyat {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.kod {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.deta {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #858BB2;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  text-align: right;
+  color: #0C0E16;
+}
+
+.status {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #33D69F;
+  background-color: #33d6a030;
+  padding: 14px 30px;
+  border-radius: 6px;
+}
+
+input {
+  height: 48px;
+  border: solid #DFE3FA;
+  border-radius: 7px;
+}
+
+select {
+  width: 140px;
+  height: 48px;
+  border: solid #DFE3FA;
+  border-radius: 7px;
+}
+
+.newcontainer {
+  width: 600px;
+  padding: 56px;
+  background-color: #FFFFFF;
+}
+
+.newform {
+  width: 504px;
+}
+
+.address {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 49px;
+}
+
+.street, .city, .post, .country {
+  width: 152px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarih {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.date {
+  display: flex;
+  gap: 24px;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.bas {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #7C5DFA;
+  margin-bottom: 24px;
+}
+
+strong {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #0C0E16;
+  margin-bottom: 49px;
+}
+
+.ilk {
+  margin-bottom: 49px;
+  margin-top: 46px;
+}
+
+.iki {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.invoice-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.item {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.375px;
+  text-align: left;
+  color: #777F98;
+  margin-bottom: 14px;
+}
+
+.title p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.inputtotal {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 18px;
+}
+
+.inputtotal input:nth-child(1) {
+  width: 114px;
+}
+
+.inputtotal input:nth-child(2) {
+  width: 46px;
+}
+
+.inputtotal input:nth-child(3) {
+  width: 50px;
+}
+
+.add {
+  width: 504px;
+  height: 48px;
+  background-color: #F9FAFE;
+  border: transparent;
+  border-radius: 50px;
+  color: #7E88C3;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+
+.btn button {
+  background-color: #F9FAFE;
+  color: #7E88C3;
+  border: transparent;
+  width: 96px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.btn-end {
+  display: flex;
+  gap: 8px;
+} 
+
+.btn-end button {
+  width: 133px;
+}
+
 /* Konteyner */
-.sidebar-container {
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 
-/* Buton Stili */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%; 
+  height: 100vh; 
+  background-color: #fff; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  transform: translateX(-100%); 
+  transition: transform 0.3s ease-in-out; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  padding: 20px;
+}
+
+.sidebar.open {
+  transform: translateX(0); 
+}
+
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Açma/Kapatma Butonu */
 .toggle-button {
   position: absolute;
   top: 20px;
   left: 20px;
   padding: 10px 20px;
-  cursor: pointer;
   background-color: #4caf50;
   color: white;
   border: none;
+  cursor: pointer;
   border-radius: 5px;
 }
 
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -300px; /* Varsayılan olarak gizli */
-  width: 300px;
-  height: 100vh;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  transition: left 0.3s ease-in-out; /* Animasyon */
+/* Form Konteyner */
+.newcontainer {
+  flex: 1;
+  padding: 40px;
+  transition: margin-left 0.3s ease;
 }
 
-/* Sidebar Açıkken */
-.sidebar.open {
-  left: 0; /* Açıldığında ekranın solunda görünür */
+/* Sidebar açıldığında içerik kayar */
+.content-shift {
+  margin-left: 250px;
 }
