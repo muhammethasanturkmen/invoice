@@ -4,14 +4,14 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const sidebarRef = useRef(null); // Sidebar'a referans
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   const closeSidebar = () => {
-    setIsOpen(false); // Sidebar'ı kapat
+    setIsOpen(false); 
   };
 
 
