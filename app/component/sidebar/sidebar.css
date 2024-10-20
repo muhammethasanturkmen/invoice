@@ -1,0 +1,35 @@
+/* Konteyner */
+.sidebar-container {
+  position: relative;
+}
+
+/* Buton Stili */
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Varsayılan olarak gizli */
+  width: 300px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease-in-out; /* Animasyon */
+}
+
+/* Sidebar Açıkken */
+.sidebar.open {
+  left: 0; /* Açıldığında ekranın solunda görünür */
+}

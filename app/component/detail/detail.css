@@ -1,0 +1,588 @@
+* {
+  background-color: #F8F8FB;
+}
+
+.detail {
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.status-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #FFFFFF;
+}
+
+.detail-status {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #858BB2;
+  background-color: #FFFFFF;
+}
+
+.peding {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #FF8F00;
+  background-color: #ff910032;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.detail-btn {
+  display: flex;
+  gap: 8px;
+  background-color: transparent;
+
+  button {
+    padding: 18px 24px;
+    border-radius: 24px;
+    border: transparent;
+  }
+}
+
+.detail-btn button:nth-child(1) {
+  background-color: #F9FAFE;
+  color: #7E88C3;
+}
+
+.detail-btn button:nth-child(2) {
+  background-color: #EC5757;
+  color: #FFFFFF;
+}
+
+.detail-btn button:nth-child(3) {
+  background-color: #7C5DFA;
+  color: #FFFFFF;
+}
+
+.fatura-detail {
+  padding: 50px 48px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.fatura-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  background-color: #FFFFFF;
+}
+
+.fatura-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+  background-color: #FFFFFF;
+}
+
+.left, p {
+  background-color: #FFFFFF;
+}
+
+.fatura-date {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  background-color: #FFFFFF;
+}
+
+.faturainvoice {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #FFFFFF;
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-color: #FFFFFF;
+}
+
+.bill-header {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #FFFFFF;
+}
+
+.bill-header, strong {
+  background-color: #FFFFFF;
+}
+
+.sent {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #FFFFFF;
+}
+
+.fatura-cikti {
+  padding: 33px 32px;
+  background-color: #F9FAFE;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cikti-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cikti-header:nth-last-child(1) {
+  margin-bottom: 39px;
+}
+
+.cikti-footer {
+  display: flex;
+  gap: 111px;
+}
+
+.cikti-price {
+  display: flex;
+  gap: 92px;
+}
+
+.footer-fatura {
+  padding: 25px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #373B53;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.footer-fatura p, h1 {
+  background-color: #373B53;
+  color: #FFFFFF;
+}
+
+.faura-kod {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+
+.grapgic {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.right p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: right;
+  color: #7E88C3;
+}
+
+.faturainvoice p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.faturainvoice strong {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #0C0E16;
+}
+
+.bill-header p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.bill-content p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.sent p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.name p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;  
+  background-color: #F9FAFE;
+  color: #7E88C3;
+}
+
+.name-s p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #0C0E16;
+}
+
+.cikti-price p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+  background-color: #F9FAFE;
+}
+
+.cikti-footer p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+  background-color: #F9FAFE;
+}
+
+.cikti-prices {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: right;
+  color: #7E88C3;
+}
+
+input {
+  height: 48px;
+  border: solid #DFE3FA;
+  border-radius: 7px;
+}
+
+select {
+  width: 140px;
+  height: 48px;
+  border: solid #DFE3FA;
+  border-radius: 7px;
+}
+
+.newcontainer {
+  width: 600px;
+  padding: 56px;
+  background-color: #FFFFFF;
+}
+
+.newform {
+  width: 504px;
+}
+
+.address {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 49px;
+}
+
+.street, .city, .post, .country {
+  width: 152px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarih {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.date {
+  display: flex;
+  gap: 24px;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.bas {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #7C5DFA;
+  margin-bottom: 24px;
+}
+
+strong {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #0C0E16;
+  margin-bottom: 49px;
+}
+
+.ilk {
+  margin-bottom: 49px;
+  margin-top: 46px;
+}
+
+.iki {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.invoice-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.item {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.375px;
+  text-align: left;
+  color: #777F98;
+  margin-bottom: 14px;
+}
+
+.title p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.inputtotal {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 18px;
+}
+
+.inputtotal input:nth-child(1) {
+  width: 114px;
+}
+
+.inputtotal input:nth-child(2) {
+  width: 46px;
+}
+
+.inputtotal input:nth-child(3) {
+  width: 50px;
+}
+
+.add {
+  width: 504px;
+  height: 48px;
+  background-color: #F9FAFE;
+  border: transparent;
+  border-radius: 50px;
+  color: #7E88C3;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+
+.btn button {
+  background-color: #F9FAFE;
+  color: #7E88C3;
+  border: transparent;
+  width: 96px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.btn-end {
+  display: flex;
+  gap: 8px;
+} 
+
+.btn-end button {
+  width: 133px;
+}
+
+/* Konteyner */
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+/* Ana konteyner */
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 700px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar Kapat Butonu */
+.close-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Sidebar Açma Butonu */
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form Konteyneri */
+.newcontainer {
+  margin-top: 40px;
+}
+
+.newform input,
+.newform select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+

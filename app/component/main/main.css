@@ -1,3 +1,117 @@
+body {
+  background-color: #F8F8FB;
+}
+
+.main {
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.header-start {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+}
+
+.newinvoice {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #7C5DFA;
+    width: 150px;
+    height: 48px;
+    border: transparent;
+    border-radius: 24px;
+
+    span {
+      background-color: #FFFFFF;
+      color: #7C5DFA;
+      padding: 11px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.fatura-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.fatura {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bilgi {
+  display: flex;
+  gap: 44px;
+}
+
+.fiyat {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.kod {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #7E88C3;
+}
+
+.deta {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #858BB2;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  text-align: right;
+  color: #0C0E16;
+}
+
+.status {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  color: #33D69F;
+  background-color: #33d6a030;
+  padding: 14px 30px;
+  border-radius: 6px;
+}
+
 input {
   height: 48px;
   border: solid #DFE3FA;
@@ -191,22 +305,25 @@ strong {
   position: relative;
 }
 
-/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100vh;
-  background-color: #333;
-  color: white;
-  transition: left 0.3s ease;
+  left: 0;
+  width: 40%; 
+  height: 100vh; 
+  background-color: #fff; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  transform: translateX(-100%); 
+  transition: transform 0.3s ease-in-out; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
   padding: 20px;
 }
 
 .sidebar.open {
-  left: 0;
+  transform: translateX(0); 
 }
+
 
 .sidebar ul {
   list-style-type: none;
@@ -217,11 +334,11 @@ strong {
   margin: 20px 0;
 }
 
-/* Kapat Butonu */
+
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   background-color: red;
   color: white;
   border: none;

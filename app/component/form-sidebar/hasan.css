@@ -217,11 +217,33 @@ strong {
   margin: 20px 0;
 }
 
-/* Kapat Butonu */
+/* Ana konteyner */
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 700px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar Kapat Butonu */
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   background-color: red;
   color: white;
   border: none;
@@ -229,9 +251,12 @@ strong {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-/* Açma/Kapatma Butonu */
+/* Sidebar Açma Butonu */
 .toggle-button {
   position: absolute;
   top: 20px;
@@ -240,18 +265,21 @@ strong {
   background-color: #4caf50;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Form Konteyner */
+/* Form Konteyneri */
 .newcontainer {
-  flex: 1;
-  padding: 40px;
-  transition: margin-left 0.3s ease;
+  margin-top: 40px;
 }
 
-/* Sidebar açıldığında içerik kayar */
-.content-shift {
-  margin-left: 250px;
+.newform input,
+.newform select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
+
